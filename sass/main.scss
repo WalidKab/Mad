@@ -7,6 +7,10 @@ h2 {
   font-size: 2.2rem;
 }
 
+h3 {
+  font-size: 1.9rem;
+}
+
 p {
   font-size: 1.1rem;
 }
@@ -17,11 +21,12 @@ header {
   background-color: black;
   height: 6rem;
 
-  a{
+  a {
     color: azure;
     transition: color;
     transition-duration: .3s;
-    &:hover{
+
+    &:hover {
       color: #a8afaf;
     }
   }
@@ -125,7 +130,7 @@ footer {
     grid-area: left-part;
   }
 
-  img{
+  img {
     width: 40rem;
     height: 28rem;
   }
@@ -144,7 +149,7 @@ footer {
   }
 }
 
-.article-2{
+.article-2 {
   margin-top: 10rem;
 }
 
@@ -163,5 +168,75 @@ footer {
 }
 
 .div-btn {
-  margin-top: 7rem;
+  padding-top: 7rem;
+}
+
+.project {
+  width: 100%;
+  height: 28rem;
+}
+
+.main-project {
+  padding-top: 6rem;
+
+  h2 {
+    margin-top: 5rem;
+    text-align: center;
+  }
+}
+
+.top-projects {
+  margin-top: 2rem;
+  width: 70%;
+  margin-left: 15%;
+
+  p {
+    letter-spacing: 0.1rem;
+  }
+}
+
+.project {
+  margin-top: 5rem;
+}
+
+.p-part {
+  margin-top: 15%;
+}
+
+.project-card-content{
+  display: none;
+  position: absolute;
+  margin-top: -35rem;
+  background-color: rgb(35, 35, 35, 0.5);
+  height: 100%;
+  p{
+    padding-top: 10rem;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    color: white;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+  }
+  .btn-project{
+    margin-top: 5rem;
+    margin-left: 10rem;
+  }
+}
+
+.project-card{
+  position: relative;
+  width: 30rem;
+  height: 35rem;
+  transition: display, block;
+  transition-duration: .3s;
+  margin-top: 5rem;
+  img{
+    width: 30rem;
+    height: 35rem;
+  }
+  &:hover{
+    .project-card-content{
+      display: block;
+    }
+  }
 }

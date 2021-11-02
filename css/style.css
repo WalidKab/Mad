@@ -7,6 +7,10 @@ h2 {
   font-size: 2.2rem;
 }
 
+h3 {
+  font-size: 1.9rem;
+}
+
 p {
   font-size: 1.1rem;
 }
@@ -147,7 +151,73 @@ footer a {
 }
 
 .div-btn {
-  margin-top: 7rem;
+  padding-top: 7rem;
+}
+
+.project {
+  width: 100%;
+  height: 28rem;
+}
+
+.main-project {
+  padding-top: 6rem;
+}
+.main-project h2 {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.top-projects {
+  margin-top: 2rem;
+  width: 70%;
+  margin-left: 15%;
+}
+.top-projects p {
+  letter-spacing: 0.1rem;
+}
+
+.project {
+  margin-top: 5rem;
+}
+
+.p-part {
+  margin-top: 15%;
+}
+
+.project-card-content {
+  display: none;
+  position: absolute;
+  margin-top: -35rem;
+  background-color: rgba(35, 35, 35, 0.5);
+  height: 100%;
+}
+.project-card-content p {
+  padding-top: 10rem;
+  margin-left: 2rem;
+  margin-right: 3rem;
+  color: white;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+.project-card-content .btn-project {
+  margin-top: 5rem;
+  margin-left: 10rem;
+}
+
+.project-card {
+  position: relative;
+  width: 30rem;
+  height: 35rem;
+  transition: display, block;
+  transition-duration: 0.3s;
+  margin-top: 5rem;
+}
+.project-card img {
+  width: 30rem;
+  height: 35rem;
+}
+.project-card:hover .project-card-content {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
