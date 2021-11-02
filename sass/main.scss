@@ -1,0 +1,167 @@
+a {
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: black;
+  height: 6rem;
+
+  a{
+    color: azure;
+    transition: color;
+    transition-duration: .3s;
+    &:hover{
+      color: #a8afaf;
+    }
+  }
+
+  img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    padding-top: 0.5rem;
+  }
+}
+
+.main-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "header-left header-right";
+}
+
+.header-left {
+  grid-area: header-left;
+  margin-left: 5rem;
+}
+
+.header-right {
+  grid-area: header-right;
+  padding-top: 2rem;
+
+  a {
+    margin-right: 5rem;
+  }
+}
+
+footer {
+  background-color: black;
+  margin-top: 5rem;
+  width: 100%;
+  height: 14rem;
+
+  a {
+    color: azure;
+  }
+}
+
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "footer-left footer-right";
+}
+
+.footer-left {
+  grid-area: footer-left;
+  margin-left: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-right {
+  grid-area: footer-right;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10rem;
+  padding-top: 2rem;
+
+  a {
+    margin-top: 1rem;
+  }
+}
+
+.before-main {
+  img {
+    margin-top: 6rem;
+    width: 100%;
+    height: 80rem;
+  }
+}
+
+.main {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.article-home {
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 7rem;
+  letter-spacing: 0.1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 80px;
+  grid-template-areas:
+    "left-part img";
+
+  .left-part {
+    grid-area: left-part;
+  }
+
+  img{
+    width: 40rem;
+    height: 28rem;
+  }
+
+  .img {
+    grid-area: img;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+  }
+}
+
+.article-2{
+  margin-top: 10rem;
+}
+
+.main-btn {
+  background-color: #9E8157;
+  border: 2px solid #9E8157;
+  padding: 1rem 2rem;
+  color: white;
+  transition: background-color, color;
+  transition-duration: .3s;
+
+  &:hover {
+    background-color: white;
+    color: #9E8157;
+  }
+}
+
+.div-btn {
+  margin-top: 7rem;
+}
